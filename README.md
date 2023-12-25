@@ -1,3 +1,14 @@
+### A dashboard to predict the effect of news headlines on GDP (specifically on Infrastructure sector)
+
+> I mainly focused on 3 KPIs of infrastructure sector for now: <br>
+> - CAGR <br> 
+> - Quality of Life Index (QOLI) <br>
+> - Investment Value (IV).
+
+---
+
+**Live Demo** : 4vinn.pythonanywhere.com
+
 ### Project Structure
 
 ```
@@ -27,7 +38,7 @@
 **Model Training and Prediction Process**
 
 - Data Preparation:
-Loaded data from 'data.xlsx' containing historical information on sentiment scores, CAGR, Quality of Life Index (QOLI), and Investment Value (IV).
+Loaded data from `data.xlsx` containing historical information on sentiment scores, CAGR, Quality of Life Index (QOLI), and Investment Value (IV).
 Extracted and reshaped the data for input features (X: sentiment scores) and target variables (Y_cagr, Y_ql, Y_iv).
 
 - Data Standardization:
@@ -39,7 +50,7 @@ Utilized LinearRegression from scikit-learn to train three separate models for p
 Each model was fitted using the standardized sentiment scores (X) as input and the corresponding standardized KPI values as target (Y_cagr, Y_ql, Y_iv).
 
 - Prediction Function:
-Created a function predictCAGR_QOLI_IV to predict the KPI values given a sentiment score as input.
+Created a function `predictCAGR_QOLI_IV` to predict the KPI values given a sentiment score as input.
 The function takes a sentiment score, predicts the standardized values using the trained models, and then transforms them back to the original scale.
 
 - Web Interface: <br>
