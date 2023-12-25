@@ -34,6 +34,8 @@ Live Demo **[here](http://4vinn.pythonanywhere.com/) !**
 > static -------- Folder containing static assets (images, CSS files, etc.) <br>
 > templates/ -- Folder containing HTML template <br>
 
+---
+
 <details> 
 <summary> Additional Notes </summary>
 
