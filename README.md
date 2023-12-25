@@ -7,7 +7,7 @@ For now, its specifically focused on Infrastructure sector. We took 3 KPIs of in
 
 #### Deployed on pythonanywhere
 
-Live Demo **[here](4vinn.pythonanywhere.com) !**
+Live Demo **[here](http://4vinn.pythonanywhere.com/) !**
 
 ---
 
