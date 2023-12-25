@@ -1,12 +1,27 @@
-###Project Structure
+### Project Structure
 
-1) app.py:         Main Flask application file (Model).
-2) data.xlsx:     Excel file containing data set.
-3) static/	         Folder containing static assets (images, CSS files, etc.).
-4) templates/:  Folder containing HTML template.
+```
+.
+├── static/
+│   ├── iitd.jpg
+│   ├── iitlogo.png
+│   ├── index.css
+│   └── style.css
+├── templates/
+|   └── index.html
+|    
+├── app.py
+├── data.xlsx
+├── Instruction.txt
+└── README.md
 
+```
+> app.py:         Main Flask application file (Model).
+> data.xlsx:      Excel file containing data set.
+> static/	      Folder containing static assets (images, CSS files, etc.).
+> templates/:     Folder containing HTML template.
 
-###Additional Notes
+### Additional Notes
 
 **Model Training and Prediction Process**
 
