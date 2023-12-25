@@ -29,10 +29,10 @@ Live Demo **[here](4vinn.pythonanywhere.com) !**
 └── README.md
 
 ```
-> app.py:       &nbsp  Main Flask application file (Model) <br>
-> data.xlsx:      Excel file containing historical information on sentiment scores and KPIs <br>
-> static/	      Folder containing static assets (images, CSS files, etc.) <br>
-> templates/:     Folder containing HTML template <br>
+> app.py ------ Main Flask application file (Model) <br>
+> data.xlsx --- Excel file containing historical information on sentiment scores and KPIs <br>
+> static ------ Folder containing static assets (images, CSS files, etc.) <br>
+> templates/ -- Folder containing HTML template <br>
 
 <details> 
 <summary> Additional Notes </summary>
