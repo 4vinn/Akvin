@@ -1,0 +1,162 @@
+body {
+    background-image: url("/static/iitd.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; 
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(204, 204, 204, 0.2); 
+    z-index: -1; 
+}
+
+
+.custom-nav {
+    background-color: #45a29e;
+    align-items: center;
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.2);
+}
+.custom-nav-wrapper {
+    padding: 0;
+    text-align: center;
+}
+.custom-brand-logo img {
+    height: 100px;
+    width: 100px;
+}
+.custom-section {
+    position: relative;
+    padding-bottom: 200px;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(216, 208, 208, 0.2); 
+    backdrop-filter: blur(10px); 
+    border-radius: 15px;
+    width: 80%;
+    max-width: 60rem; 
+    text-align: center;
+    box-shadow: 4px 4px 20px rgba(238, 276, 276, 0.6);
+    transition: all 0.5s ease 0s;
+}
+.custom-header {
+    color: #000000;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+
+.custom-form {
+    max-width: 100%;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+.custom-input-field {
+    margin-bottom: 20px;
+    left: .7rem;
+}
+.custom-input-field label {
+    font-weight: bold;
+    color: #000000;
+    align-items: left;
+    transition: color 0.3s;
+}
+.custom-input-field input {
+    width: 80%;
+    box-sizing: content-box;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1.5px solid #b4b4b4;
+    border-radius: 0;
+    outline: none;
+    height: 2rem;
+    color: rgb(241, 241, 241);
+    font-size: 16px;
+    margin: 0 0 8px 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    transition: border-color 0.3s;
+}
+.custom-input-field input:focus {
+    border-color: #ff4e4e;
+}
+.custom-input-field input::placeholder {
+    color: #aaaaaa; 
+}
+
+.custom-input-field input:focus::placeholder {
+    color: #ff6e6e; 
+}
+
+.btn_eva {
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn_eva {
+    border-color: #000000;
+    color: #000000;
+    letter-spacing: 2px;
+    font-weight: 900;
+    font-size: x-large;
+    font-family: 'Teko', sans-serif;
+    transition: border-color 1s;
+}
+.btn_eva:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transition: background-color 0.5s;
+}
+.btn_eva:active{
+    color: #000000;
+}
+
+
+.predicted_box {
+    margin-top: 2rem;  
+    margin-bottom: 2rem;  
+}
+.row2 {
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+}
+.row2:hover {
+    background-color: #a3a3a3ad;
+    
+    .prediction-value{
+        color: #000000;
+        /* transition: color 0.3s ease-in-out; */
+    }
+    .prediction-label{
+        color: #f2f2f2;
+        /* transition: color 0.3s ease-in-out; */
+    }
+}
+.prediction-label {
+    flex: 1;
+    text-align: right;
+    padding-right: 10px;  
+    font-family: 'Oswald', sans-serif;
+}
+.prediction-value {
+    flex: 1;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    color: #f2f2f2;
+    transition: opacity 3s ease-in-out;
+}

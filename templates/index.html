@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Akvin Model</title>
+    <link rel="icon" href="/templates/iitlogo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Oswald:wght@600&family=Teko&display=swap" rel="stylesheet">
+    <link href="{{ url_for('static', filename='index.css') }}" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+
+    <div class="custom-section" id="index-banner">
+
+        <div class="container">
+
+            <div class="custom-nav-wrapper"><a id="logo-container" href="https://home.iitd.ac.in/" target="_blank" class="custom-brand-logo"><img
+                src="/static/iitlogo.png" alt="logo" height="60px" width="60px"></a>
+            </div>
+            <br><br>
+            <h1 class="custom-header">INFRASTRUCTURE KPI PREDICTION MODEL</h1>
+            <div class="row">
+                <h5 class="custom-header">Evaluating news sentiment analysis
+<br>
+                </h5>
+            </div>
+<br><br><br>
+            <div class="row">
+                <form action='/predict' method="post" class="custom-form">
+                
+                    <div class="row">
+                        <div class="custom-input-field">
+                            <label for="news_headline"><b>News Headline</b></label>
+                            <br>
+                            {{ form.csrf_token }}
+                            <input placeholder="Type here..." name="news_headline" id="news_headline" type="text"
+                                class="validate" autocomplete="off" value="{% if form.news_headline.data %}{{ form.news_headline.data }}{% endif %}">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <button  id="predictButton" type="submit" class="btn_eva">PREDICT</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="predicted_box" id="predicted_box">
+                <div class="row2">
+                    <div class="prediction-label">Predicted CAGR  :</div>
+                    <div class="prediction-value">{{ cagr }}</div>
+                </div>
+                <div class="row2">
+                    <div class="prediction-label">Quality of Life Index  :</div>
+                    <div class="prediction-value">{{ qoli }}</div>
+                </div>
+                <div class="row2">
+                    <div class="prediction-label">Investment Value  :</div>
+                    <div class="prediction-value">{{ iv }}</div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <br><br>
+    </div>
+    </div>
+
+
+</body>
+
+</html>
