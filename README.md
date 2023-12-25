@@ -30,8 +30,8 @@ Live Demo **[here](http://4vinn.pythonanywhere.com/) !**
 
 ```
 > app.py ------ Main Flask application file (Model) <br>
-> data.xlsx --- Excel file containing historical information on sentiment scores and KPIs <br>
-> static ------ Folder containing static assets (images, CSS files, etc.) <br>
+> data.xlsx ---- Excel file containing historical information on sentiment scores and KPIs <br>
+> static -------- Folder containing static assets (images, CSS files, etc.) <br>
 > templates/ -- Folder containing HTML template <br>
 
 <details> 
