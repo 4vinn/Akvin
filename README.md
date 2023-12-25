@@ -16,7 +16,7 @@
 └── README.md
 
 ```
-> app.py:         Main Flask application file (Model).
+> app.py:         Main Flask application file (Model). <br>
 > data.xlsx:      Excel file containing data set.
 > static/	      Folder containing static assets (images, CSS files, etc.).
 > templates/:     Folder containing HTML template.
