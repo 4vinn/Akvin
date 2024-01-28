@@ -66,3 +66,5 @@ Upon submitting a news headline, the application `extracts the sentiment` and us
 Predicted values are then rounded to four decimal places for clarity and presented on the web page.
 
 </details>
+
+![akvin](https://github.com/4vinn/Akvin/assets/100095098/109dd536-f909-4bb4-ad6f-e012655a0f6c)
